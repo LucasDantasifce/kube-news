@@ -35,8 +35,8 @@ jobs:
           context: ./src
           push: true
           tags:
-            lucasdantas123/kube-news:latest
-            lucasdantas123/kube-news:${{github.run_number}}
+            lucasdantas123/kube-new:latest
+            lucasdantas123/kube-new:${{github.run_number}}
 
             
           
