@@ -36,7 +36,7 @@ jobs:
           push: true
           tags:
             lucasdantas123/kube-news:latest
-            lucasdantas123/kube-news:v1
+            lucasdantas123/kube-news:${{github.run_number}}
 
             
           
