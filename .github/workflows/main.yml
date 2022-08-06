@@ -34,7 +34,7 @@ jobs:
           file: ./src/Dockerfile
           context: ./src
           push: true
-          tags:
+          tags: |
             lucasdantas123/kube-new:latest
             lucasdantas123/kube-new:${{github.run_number}}
 
