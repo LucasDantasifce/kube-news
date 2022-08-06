@@ -22,8 +22,8 @@ jobs:
           context: ./src
           push: true
           tags: |
-            lucasdantas123/kube-news:latest
-            lucasdantas123/kube-news:${{github.run_number}}
+            lucasdantas123/kube-new:latest
+            lucasdantas123/kube-new:${{github.run_number}}
           
   CD:
     runs-on: ubuntu-lates
@@ -34,12 +34,12 @@ jobs:
       - uses: Azure/k8s-set-context@v2
         with:
           method: kubeconfig
-          kubeconfig: ${{secrets.k8s_CONFIG}}
+          kubeconfig: ${{secrets.K8S_CONFIG}}
 
       - name: Deploy to Kubernetes cluster
         uses: Azure/k8s-deploy@v3.1
         with:
-          images: lucasdantas123/kube-news:${{github.run_number}}
+          images: lucasdantas123/kube-new:${{github.run_number}}
           manifests: |
             k8s/deploymnent.yaml
             #ajuste
