@@ -26,7 +26,7 @@ jobs:
             lucasdantas123/kube-new:${{github.run_number}}
           
   CD:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     needs: [CI]
     steps:
      - uses: actions/checkout@v3
