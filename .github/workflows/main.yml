@@ -26,7 +26,7 @@ CI:
         uses: docker/login-action@v2.0.0
         with:
           username: ${{secrets.DOCKERHUB_USER}}
-          password: ${{secrets.DOCKERHUB_PWD}}
+          password: ${{secrets.DOCKER_PWD}}
   
       - name: Build and push Docker images
         uses: docker/build-push-action@v3.1.1
