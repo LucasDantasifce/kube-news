@@ -41,5 +41,5 @@ jobs:
         with:
           images: lucasdantas123/kube-new:${{github.run_number}}
           manifests: |
-            k8s/deploymnent.yaml
+            k8s/deployment.yaml
       
