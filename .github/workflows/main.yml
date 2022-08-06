@@ -54,17 +54,3 @@ jobs:
           images: lucasdantas123/kube-new:${{github.run_number}}
           manifests: |
             k8s/deploymnent.yaml
-            #teste
-          
-        
-        
-        
-      
-      
-      
-    
-     
-  
-            
-          
-          
